@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+.container{
+  max-width: 1280px;
+  padding: 20px;
+  margin: auto;
+}
+.bg-color{
+  background-color: #1E1E20;
+}
+.blueButton{
+  width: 292;
+height: 86;
+top: 575px;
+left: 100px;
+border-radius: 10px;
+ background-color: #2249E7;
+}
+.Textsize{
+font-weight: 400;
+font-size: 36px;
+line-height: 155%;
+text-transform: uppercase;
+ color: #FFFFFF;
+}
+.minTextsize{
+font-weight: 400;
+font-size: 24px;
+line-height: 100%;
+color: #FFFFFF;
+
+}
