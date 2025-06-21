@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <header>
       <div className="container">
-        <img src="/logo.png" alt="Lucid Logistics Academy" className="logo" />
+        <img src="/src/assets/logo.png" alt="Lucid Logistics Academy" className="logo" />
         <div style={{ display: 'flex', alignItems: 'center', gap: '40px' }}>
           <div
             className={`theme-toggle ${darkMode ? 'dark' : ''}`}
