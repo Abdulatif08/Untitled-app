@@ -1,11 +1,29 @@
-import React from 'react'
+import { useState, useEffect } from "react";
 
-const Header = () => {
+export default function Header() {
+  const [darkMode, setDarkMode] = useState(true);
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", darkMode);
+    document.documentElement.classList.toggle("light", !darkMode);
+  }, [darkMode]);
+
   return (
-    <div>
-      
-    </div>
-  )
+    <header>
+      <div className="container">
+        <img src="/logo.png" alt="Lucid Logistics Academy" className="logo" />
+        <div style={{ display: 'flex', alignItems: 'center', gap: '40px' }}>
+          <div
+            className={`theme-toggle ${darkMode ? 'dark' : ''}`}
+            onClick={() => setDarkMode(!darkMode)}
+          >
+            <span>☀️</span>
+            <span>🌙</span>
+            <div className="circle"></div>
+          </div>
+          <span className="phone">+998 (55) 500-37-77</span>
+        </div>
+      </div>
+    </header>
+  );
 }
-
-export default Header
