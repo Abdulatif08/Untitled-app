@@ -11,7 +11,8 @@ export default function Header() {
   return (
     <header>
       <div className="container">
-        <img src="/src/assets/logo.png" alt="Lucid Logistics Academy" className="logo" />
+       <div className="header-section">
+         <img src="/src/assets/logo.png" alt="Lucid Logistics Academy" className="logo" />
         <div style={{ display: 'flex', alignItems: 'center', gap: '40px' }}>
           <div
             className={`theme-toggle ${darkMode ? 'dark' : ''}`}
@@ -23,6 +24,7 @@ export default function Header() {
           </div>
           <span className="phone">+998 (55) 500-37-77</span>
         </div>
+       </div>
       </div>
     </header>
   );
