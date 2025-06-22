@@ -129,26 +129,3 @@ header {
 .dark .phone {
   color: white;
 }
-.result-section{
-  display: flex;
-  flex-direction: column;
-}
-.result-section .cards{
-  gap: 30px;
-}
-.result-section .topic{
-  display: flex;
-  justify-content: center;
-}
-.result-section .card{
-  width: 394;
-height: 187;
-top: 2608px;
-left: 100px;
-border-radius: 10px;
-display: flex;
-align-items: center;
-flex-direction: column;
-background-color: rgba(0, 0, 0, 0.719);
-padding: 30px 22px 30px 21px;
-}
