@@ -1,46 +1,16 @@
 @import "tailwindcss";
-
-.container{
-  max-width: 1280px;
-  padding: 20px;
-  margin: auto;
-}
-.bg-color{
-  background-color: #1E1E20;
-}
-.blueButton{
-  width: 292;
-height: 86;
-top: 575px;
-left: 100px;
-border-radius: 10px;
- background-color: #2249E7;
-}
-.Textsize{
-font-weight: 400;
-font-size: 36px;
-line-height: 155%;
-text-transform: uppercase;
- color: #FFFFFF;
-}
-.minTextsize{
-font-weight: 400;
-font-size: 24px;
-line-height: 100%;
-color: #FFFFFF;
-
-}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
+/* GLOBAL SETTINGS */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
   transition: background-color 0.3s ease;
-  
 }
 
+/* THEME COLORS */
 .light {
   background: linear-gradient(to right, #ffffff, #f9fafb);
   color: #111827;
@@ -51,11 +21,41 @@ html, body {
   color: #f9fafb;
 }
 
+/* CONTAINER */
+.container {
+  max-width: 1280px;
+  padding: 20px;
+  margin: auto;
+}
+
+/* BUTTONS */
+.blueButton {
+  width: 292px;
+  height: 86px;
+  border-radius: 10px;
+  background-color: #2249E7;
+}
+
+/* TEXT STYLES */
+.Textsize {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 155%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.minTextsize {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+
+/* HEADER */
 header {
   padding: 20px 0;
   transition: background-color 0.3s ease;
 }
-
 .header-section {
   max-width: 1200px;
   margin: 0 auto;
@@ -64,16 +64,16 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
 .logo {
   height: 40px;
   width: auto;
   transition: transform 0.3s ease;
 }
-
 .logo:hover {
   transform: scale(1.05);
 }
+
+/* THEME TOGGLE */
 .theme-toggle {
   position: relative;
   width: 50px;
@@ -88,18 +88,15 @@ header {
   transition: background-color 0.3s ease;
   overflow: hidden;
 }
-
 .theme-toggle.dark {
   background-color: #4b5563;
 }
-
 .theme-toggle span {
   font-size: 14px;
   color: #fff;
   z-index: 1;
   user-select: none;
 }
-
 .theme-toggle .circle {
   position: absolute;
   top: 2px;
@@ -111,44 +108,86 @@ header {
   transform: translateX(0);
   z-index: 0;
 }
-
 .theme-toggle.dark .circle {
-  transform: translateX(18px); 
+  transform: translateX(18px);
 }
 
+/* PHONE TEXT */
 .phone {
   font-size: 16px;
   font-weight: 600;
   transition: color 0.3s ease;
 }
-
 .light .phone {
   color: #1a1a1a;
 }
-
 .dark .phone {
   color: white;
 }
-.result-section{
+
+/* RESULT SECTION */
+.result-section {
   display: flex;
   flex-direction: column;
+  padding: 60px 0;
 }
-.result-section .cards{
-  gap: 30px;
-}
-.result-section .topic{
+.result-section .topic {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
-.result-section .card{
-  width: 394;
-height: 187;
-top: 2608px;
-left: 100px;
-border-radius: 10px;
-display: flex;
-align-items: center;
-flex-direction: column;
-background-color: rgba(0, 0, 0, 0.719);
-padding: 30px 22px 30px 21px;
+.result-section .topic h1 {
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.result-section .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+.result-section .card {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 28px 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.719);
+  position: relative;
+}
+.result-section .card span {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2249E7;
+}
+.result-section .card h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.result-section .card p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.result-section .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  border-color: #2249E7;
+}
+
+.light .result-section .card {
+  background-color: #ffffff;
+  color: #111827;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+}
+.dark .result-section .card {
+  background-color: rgba(15, 23, 42, 0.9);
+  color: #f9fafb;
 }
