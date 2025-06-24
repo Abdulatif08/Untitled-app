@@ -5,7 +5,7 @@ const FreeCourse = () => {
     <div className="container free-course">
       <div className="free-left">
         <h1>BEPUL DARSGA<br />RO‘YXATDAN  O‘TING</h1>
-        <p>Va o‘zингizning ingliz tili darajangizni<br />aniqlash imkoniyatiga ega bo‘ling</p>
+        <p>Va o’zingizning ingliz tili darajangizni aniqlash imkoniyatiga ega bo’ling</p>
       </div>
       <div className="free-right">
         <input type="text" placeholder="Ismingiz" />
