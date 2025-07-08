@@ -206,7 +206,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 60px;
+  gap: 490px;
   border-radius: 10px;
   flex-wrap: wrap;
 }
@@ -258,16 +258,16 @@ header {
   height: 50px;
   padding: 0 15px;
   border-radius: 8px;
-  background-color: #2d2d30;
-  color: white;
+  background-color: inherit;
+  color: rgb(255, 255, 255);
   border: 1px solid #3b3b3d;
   font-size: 14px;
   outline: none;
 }
 
 .light .free-right input {
-  background-color: #e5e7eb;
-  color: #111827;
+  background-color: inherit;
+  color: #483232;
 }
 
 .free-right button {
